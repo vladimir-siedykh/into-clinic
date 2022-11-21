@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Hero.module.css';
+import mainImage from '../../public/images/hero.webp';
 
 const Hero = () => {
   return (
@@ -7,20 +9,18 @@ const Hero = () => {
       <div className='container center'>
         <div className={styles.wrapper}>
           <div className={styles.content}>
-            <h1 className={`heading-1 ${styles.title}`}>
-              The Next Generation
-            </h1>
+            <h1 className={`heading-1 ${styles.title}`}>The Next Generation</h1>
             <h2 className={`heading-2 ${styles.subtitle}`}>
               Of Clinic & Family Care
             </h2>
-            <p>
+            <p className={styles.text}>
               Our clinic lets you visit exceptional medical providers, get
               clinically-backed wellness services, and discover the right
               medicine, all in one place.
             </p>
-            <button className={styles.btnMobile} type='submit'>
+            <Link href='/booking' className={styles.btnMobile} type='submit'>
               Make An Appointments
-            </button>
+            </Link>
             <div className={styles.formContainer}>
               <form className={styles.form}>
                 <div className={styles.formControl}>
@@ -79,19 +79,24 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-                <button className={styles.btn} type='submit'>
+                <Link
+                  href='/booking'
+                  className={`btn-blue ${styles.btn}`}
+                  type='submit'
+                >
                   Make An Appointments
-                </button>
+                </Link>
               </form>
             </div>
           </div>
           <Image
+            className={styles.img}
             src='/images/hero.webp'
             alt='hero'
             width={596}
             height={697}
-            layout='responsive'
             priority={true}
+            layout='responsive'
           />
         </div>
       </div>

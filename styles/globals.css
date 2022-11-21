@@ -94,7 +94,7 @@ meter {
 .heading-1 {
   font-family: 'Inter', sans-serif;
   /* font-size: 8rem; */
-  font-size: clamp(5.6rem, 5vw, 8rem);
+  font-size: clamp(4.6rem, 5vw, 8rem);
   line-height: 1.2;
   color: var(--clr-saphire);
   font-weight: 700;
@@ -103,7 +103,7 @@ meter {
 .heading-2 {
   font-family: 'Inter', sans-serif;
   /* font-size: 4rem; */
-  font-size: clamp(2.8rem, 2vw, 4rem);
+  font-size: clamp(2.4rem, 2vw, 4rem);
   line-height: 120%;
   color: var(--clr-marine);
   font-weight: 500;
@@ -129,6 +129,35 @@ meter {
   text-align: center;
 }
 
+.btn-transparent {
+  display: block;
+  padding: 1.6rem 3.2rem;
+  border: 2px solid var(--clr-saphire);
+  color: var(--clr-saphire);
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  width: max-content;
+}
+
+.btn-transparent:hover, .btn-transparent:active {
+  color: var(--clr-white);
+  background-color: var(--clr-saphire);
+}
+
+.btn-blue {
+  display: block;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  background-color: var(--clr-saphire);
+  color: var(--clr-white);
+  border-radius: 0.6rem;
+  width: max-content;
+}
+
+.btn-blue:hover, .btn-blue:active {
+  background-color: var(--clr-marine);
+}
+
 @media(max-width: 1200px) {
   .section {
     padding-inline: 6rem;
@@ -140,3 +169,5 @@ meter {
     padding-inline: 2.4rem;
   }
 }
+
+@media not all and (min-resolution:.001dpcm) { img[loading="lazy"] { clip-path: inset(0.5px) } }

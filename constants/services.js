@@ -1,0 +1,68 @@
+const services = [
+  {
+    id: 1,
+    title: 'Primary Care',
+    icon: '/images/icons/service-1.svg',
+    descr: 'First care for your beloved family',
+    slug: '/services/primary-care',
+    bg: '#F5F9FE',
+  },
+  {
+    id: 2,
+    title: 'Dermatology',
+    icon: '/images/icons/service-2.svg',
+    descr: 'Treat skin problems in a professional manner',
+    slug: '/services/dermatology',
+    bg: '#FFFFFF',
+  },
+  {
+    id: 3,
+    title: 'Sport Medicine',
+    icon: '/images/icons/service-3.svg',
+    descr: 'Helps athletes recover their injuries quickly and efficiently',
+    slug: '/services/sport-medicine',
+    bg: '#F5F9FE',
+  },
+  {
+    id: 4,
+    title: 'Psychiatrist',
+    icon: '/images/icons/service-4.svg',
+    descr: 'Help solve your problem comprehensively',
+    slug: '/services/psychiatrist',
+    bg: '#FFFFFF',
+  },
+  {
+    id: 5,
+    title: 'Neurology',
+    icon: '/images/icons/service-5.svg',
+    descr: 'Treat neurological problems in a professional manner',
+    slug: '/services/neurology',
+    bg: '#F5F9FE',
+  },
+  {
+    id: 6,
+    title: 'Cardiology',
+    icon: '/images/icons/service-6.svg',
+    descr: 'Treat heart problems with modern technology',
+    slug: '/services/cardiology',
+    bg: '#FFFFFF',
+  },
+  {
+    id: 7,
+    title: 'Dental Care',
+    icon: '/images/icons/service-7.svg',
+    descr: 'overcome and cure toothache comprehensively',
+    slug: '/services/dental-care',
+    bg: '#F5F9FE',
+  },
+  {
+    id: 8,
+    title: 'Maternity',
+    icon: '/images/icons/service-8.svg',
+    descr: 'Pregnancy consultation with experts',
+    slug: '/services/maternity',
+    bg: '#FFFFFF',
+  },
+];
+
+export default services;

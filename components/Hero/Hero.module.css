@@ -26,6 +26,10 @@
   color: var(--clr-crystal);
 }
 
+.text {
+  max-width: 40rem;
+}
+
 .formContainer {
   
 }
@@ -69,6 +73,7 @@
   color: var(--clr-white);
   width: max-content;
   margin-left: -5rem;
+  cursor: pointer;
 }
 
 .btnMobile {
@@ -80,9 +85,12 @@
   margin-top: 1.6rem;
   display: none;
   text-align: center;
+  cursor: pointer;
 }
 
-
+.btnMobile:hover, .btnMobile:active {
+  background-color: var(--clr-marine);
+}
 
 @media(max-width: 950px) {
   .wrapper {
@@ -105,6 +113,11 @@
 @media(max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
   }
 }
 

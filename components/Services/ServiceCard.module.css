@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  width: 29rem;
+}
+
+.title {
+  margin-top: 1.6rem;
+}
+
+.text {
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: var(--clr-white);
+  padding: 1rem;
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.btn:hover {
+  background-color: var(--clr-saphire);
+}
+
+.btn:hover .arrow path {
+  fill: var(--clr-white);
+}
