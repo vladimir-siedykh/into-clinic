@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--clr-black-light);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 90;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 2.4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.btn {
+  display: block;
+  border: 1px solid var(--clr-white);
+  padding: 1rem 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  margin-top: 3.4rem;
+}
