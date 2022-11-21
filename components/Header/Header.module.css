@@ -3,6 +3,13 @@
   padding-inline: 10rem;
   padding-top: 2.1rem;
   padding-bottom: 2.1rem;
+}
+
+.bg {
+  background-color: var(--clr-chost-white);
+}
+
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;

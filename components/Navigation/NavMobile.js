@@ -3,11 +3,11 @@ import styles from './NavMobile.module.css';
 import { motion } from 'framer-motion';
 
 const NavMobile = ({ setOpen }) => {
-  const handle = () => {
-    setTimeout(() => {
-      setOpen(!setOpen);
-    }, 300);
-  };
+  // const handle = () => {
+  //   setTimeout(() => {
+  //     setOpen(!setOpen);
+  //   }, 300);
+  // };
 
   const list = {
     visible: {

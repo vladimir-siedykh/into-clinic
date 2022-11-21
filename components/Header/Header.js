@@ -21,20 +21,24 @@ const Header = () => {
   }
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href='/'>
-            <Image 
-            src='/images/logo.svg'
-            alt='logo'
-            width={46}
-            height={46}
-            priority={true}
-            />
-        </Link>
+    <header className={`${styles.header} ${styles.bg}`}>
+      <div className='container center'>
+        <div className={styles.wrapper}>
+          <div className={styles.logo}>
+            <Link href='/'>
+                <Image
+                src='/images/logo.svg'
+                alt='logo'
+                width={46}
+                height={46}
+                priority={true}
+                />
+            </Link>
+          </div>
+          {!isMobile && <NavDesktop />}
+          {isMobile && <NavigationMobile />}
+        </div>
       </div>
-      {!isMobile && <NavDesktop />}
-      {isMobile && <NavigationMobile />}
     </header>
   );
 };

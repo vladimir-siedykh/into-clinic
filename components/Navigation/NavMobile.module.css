@@ -5,10 +5,8 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: var(--clr-black-light);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--clr-chost-white);
+
   z-index: 90;
 
   display: flex;
@@ -23,7 +21,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .btn {
