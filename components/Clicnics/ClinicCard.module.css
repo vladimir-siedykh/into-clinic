@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 25.6rem;
+  background-color: var(--clr-white);
+  padding-top: 2.4rem;
+  padding-right: 2.4rem;
+  display: flex;
+  border-top-right-radius: 0.4;
+}
+
+.contentTitle {
+  width: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.arrow {
+  align-self: center;
+}

@@ -1,14 +1,28 @@
 .services {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .intro {
   max-width: 50rem;
+  margin-inline: auto;
 }
 
 .text {
   margin-top: 1.6rem;
+  text-align: center;
+}
+
+@media(max-width: 1200px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
 }

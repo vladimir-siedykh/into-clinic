@@ -3,10 +3,13 @@ import styles from './NavMobile.module.css';
 import { motion } from 'framer-motion';
 
 const NavMobile = ({ setOpen }) => {
+  const handle = () => {
+    setTimeout(() => {
+      setOpen(!setOpen);
+    }, 100);
+  };
   // const handle = () => {
-  //   setTimeout(() => {
-  //     setOpen(!setOpen);
-  //   }, 300);
+  //   setOpen(!setOpen);
   // };
 
   const list = {
@@ -48,19 +51,29 @@ const NavMobile = ({ setOpen }) => {
         className={styles.list}
       >
         <motion.li variants={item}>
-          <Link href='/'>Home</Link>
+          <Link href='/' onClick={() => handle()}>
+            Home
+          </Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link href='/about'>About Us</Link>
+          <Link href='/about' onClick={() => handle()}>
+            About Us
+          </Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link href='/location'>Location</Link>
+          <Link href='/location' onClick={() => handle()}>
+            Location
+          </Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link href='/health-news'>Health News</Link>
+          <Link href='/health-news' onClick={() => handle()}>
+            Health News
+          </Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link href='/careers'>Careers</Link>
+          <Link href='/career' onClick={() => handle()}>
+            Career
+          </Link>
         </motion.li>
       </motion.ul>
     </motion.nav>

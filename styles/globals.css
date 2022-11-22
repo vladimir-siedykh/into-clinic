@@ -158,6 +158,10 @@ meter {
   background-color: var(--clr-marine);
 }
 
+.bg {
+  background-color: var(--clr-chost-white);
+}
+
 @media(max-width: 1200px) {
   .section {
     padding-inline: 6rem;

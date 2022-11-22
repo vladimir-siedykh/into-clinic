@@ -5,7 +5,7 @@ import mainImage from '../../public/images/hero.webp';
 
 const Hero = () => {
   return (
-    <section className={`section ${styles.section} ${styles.bg}`}>
+    <section className={`section bg ${styles.section}`}>
       <div className='container center'>
         <div className={styles.wrapper}>
           <div className={styles.content}>
