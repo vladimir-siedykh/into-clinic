@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Hero.module.css';
-import mainImage from '../../public/images/hero.webp';
+import mainImage from '../../public/images/hero-new.png';
 
 const Hero = () => {
   return (
@@ -98,6 +98,15 @@ const Hero = () => {
             priority={true}
             layout='responsive'
           />
+          {/* <div className={styles.imgContainer}>
+            <Image
+              className={styles.img}
+              src={mainImage}
+              alt='main image'
+              fill={true}
+              priority={true}
+            />
+          </div> */}
         </div>
       </div>
     </section>

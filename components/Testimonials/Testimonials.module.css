@@ -1,0 +1,27 @@
+.wrapper {
+  margin-top: 6rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 6.4rem;
+  background-color: var(--clr-chost-white);
+}
+
+.imgContainer {
+  position: relative;
+  display: block;
+}
+
+.img {
+  object-fit: cover;
+}
