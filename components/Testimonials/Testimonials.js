@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './Testimonials.module.css';
 import userImage from '../../public/images/testimonial.png';
+import starImg from '../../public/images/icons/star.svg';
 
 const Testimonials = () => {
   return (
@@ -21,11 +22,11 @@ const Testimonials = () => {
             </div>
             <div className={styles.content}>
               <div className={styles.stars}>
-                <img src='/images/icons/star.svg' alt='star' />
-                <img src='/images/icons/star.svg' alt='star' />
-                <img src='/images/icons/star.svg' alt='star' />
-                <img src='/images/icons/star.svg' alt='star' />
-                <img src='/images/icons/star.svg' alt='star' />
+                <Image src={starImg} alt='star' />
+                <Image src={starImg} alt='star' />
+                <Image src={starImg} alt='star' />
+                <Image src={starImg} alt='star' />
+                <Image src={starImg} alt='star' />
               </div>
               <h3 className='heading-3'>
                 When your body is not going well, you must go to clinically. The

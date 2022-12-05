@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './ServiceCard.module.css';
 
 const ServiceCard = ({service}) => {
-  const {title, descr, icon, slug, bg} = service;
+  const {title, descr, icon, bg} = service;
   return (
     <div className={styles.card} style={{backgroundColor: `${bg}`}}>
       <Image src={icon} alt={title} width={56} height={56} />
