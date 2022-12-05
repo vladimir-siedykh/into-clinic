@@ -1,15 +1,28 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
   margin-top: 6rem;
-  gap: 3.2rem;
+  padding-bottom: 2rem;
 }
 
 .titleClinic {
   color: var(--clr-saphire);
   border-bottom: 1px solid var(--clr-grey);
   cursor: pointer;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  width: 100%;
+}
+
+.innerCarusel {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 0.3rem;
+}
+
+.innerCarusel > * {
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

@@ -18,7 +18,7 @@ const NavDesktop = () => {
           <Link href='/health-news'>Health News</Link>
         </li>
         <li>
-          <Link href='/career'>Career</Link>
+          <Link href='/careers'>Careers</Link>
         </li>
       </ul>
     </nav>

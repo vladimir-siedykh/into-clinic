@@ -138,7 +138,7 @@ meter {
   font-size: 1.6rem;
   border-radius: 0.6rem;
   width: max-content;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .btn-transparent:hover, .btn-transparent:active {

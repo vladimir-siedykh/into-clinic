@@ -71,8 +71,8 @@ const NavMobile = ({ setOpen }) => {
           </Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link href='/career' onClick={() => handle()}>
-            Career
+          <Link href='/careers' onClick={() => handle()}>
+            Careers
           </Link>
         </motion.li>
       </motion.ul>

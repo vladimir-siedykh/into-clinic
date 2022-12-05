@@ -4,7 +4,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1.2rem;
   overflow: hidden;
-  max-width: 60rem;
+  /* max-width: 50rem; */
   width: 100%;
   height: auto;
 }
@@ -29,17 +29,35 @@
 
 .content {
   background-color: var(--clr-white);
-  padding: 1.6rem;
+  padding: 2.4rem 1.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
 }
 
 .arrow {
   align-self: center;
+  pointer-events: all;
+  display: flex;
 }
 
 .img {
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+@media(max-width: 660px) {
+  .card {
+    /* max-width: 30rem; */
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .adress {
+    font-size: 1.4rem;
+  }
 }

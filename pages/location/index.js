@@ -9,7 +9,7 @@ const LacationPage = () => {
         <h1 className='heading-2'>Find clinic Family Health</h1>
         <div className={styles.wrapper}>
           {clinics.map((clinic) => (
-            <ClinicCard key={clinic.id} clinic={clinic} />
+            <ClinicCard style={{maxWidth: '60rem'}} key={clinic.id} clinic={clinic} />
           ))}
         </div>
         <div>

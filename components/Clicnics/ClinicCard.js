@@ -1,30 +1,24 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './ClinicCard.module.css';
 
-const ClinicCard = ({ clinic }) => {
+const ClinicCard = ({ clinic, style }) => {
   const { image, title, address } = clinic;
   return (
-    <Link href={`/location/${clinic.slug}`}>
-      <div className={styles.card}>
-        <div className={styles.imgContainer}>
-          <Image
-            src={image}
-            alt='clinic'
-            className={styles.img}
-          />
+    <div className={styles.card} style={style}>
+        <Image src={image} alt='clinic' className={styles.img} />
+      <div className={styles.content}>
+        <div className={styles.contentTitle}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.adress}>{address}</p>
         </div>
-        <div className={styles.content}>
-          <div className={styles.contentTitle}>
-            <h3 className={styles.title}>{title}</h3>
-            <p className={styles.adress}>{address}</p>
-          </div>
-
+        <Link href={`/location/${clinic.slug}`}>
           <div className={styles.arrow}>
             <svg
               className={styles.arrow}
-              width='24'
-              height='24'
+              width='48'
+              height='48'
               viewBox='0 0 24 24'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
@@ -35,9 +29,9 @@ const ClinicCard = ({ clinic }) => {
               />
             </svg>
           </div>
-        </div>
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 };
 
