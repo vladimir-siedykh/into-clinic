@@ -24,7 +24,7 @@ const clinics = [
     id: 2,
     title: 'Sacramento City',
     image: img_card_2,
-    address: '4140 Parker Rd. Allentown, Sacremento 31134',
+    address: '4140 Parker Rd, Sacremento 31134',
     slug: 'sacramento-city',
     imageMain,
     image_1,
