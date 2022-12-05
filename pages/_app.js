@@ -1,28 +1,30 @@
 import Layout from '../components/Layout/Layout'
 import '../styles/globals.css'
-import {  Poppins, Inter } from '@next/font/google'
+import { Montserrat } from '@next/font/google'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  variable: '--poppins-font',
-  weight: '400'
-});
+const montserrat = Montserrat({
+  weights: [400, 500, 600, 700],
+})
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--inter-font',
-});
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   variable: '--poppins-font',
+// });
+
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--inter-font',
+// });
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <style jsx global>{`
         :root {
-          --poppins-font: ${poppins.style.fontFamily};
-          --inter-font: ${inter.style.fontFamily};
+          --montserrat-font: ${montserrat.style.fontFamily};
         }
         /* body {
-          font-family: ${inter.style.fontFamily};
+          font-family: var(--montserrat-font);
         } */
       `}</style>
       <Layout>

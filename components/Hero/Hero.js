@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Hero.module.css';
-import mainImage from '../../public/images/hero-new.png';
+// import mainImage from '../../public/images/hero-new.png';
 
 const Hero = () => {
   return (

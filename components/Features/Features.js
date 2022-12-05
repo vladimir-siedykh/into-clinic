@@ -70,7 +70,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className={styles.contentRight}>
+        <div className={`${styles.contentRight} ${styles.pattern}`}>
           <div className={styles.content}>
             <h2 className='heading-2'>
               Here is what makes us different from conventional clinics

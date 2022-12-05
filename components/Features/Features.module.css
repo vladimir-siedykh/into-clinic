@@ -22,6 +22,17 @@
   padding-inline: 2.4rem;
 }
 
+.pattern {
+  position: relative;
+}
+
+.pattern:after {
+  content: url('/images/pattern-5.png');
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .list {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -90,6 +101,14 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .pattern:after {
+    content: none;
+  }
+}
+
+
 
 @media(max-width: 600px) {
   .counters {

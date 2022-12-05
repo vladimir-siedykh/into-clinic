@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const About = () => {
   return (
     <section className='section'>
-      <div className='container center'>
+      <div className={`container center ${styles.pattern}`}>
         <div className={styles.wrapper}>
           <h2 className='heading-2 text-center'>
             We are an international clinic with over 25 years of experience in

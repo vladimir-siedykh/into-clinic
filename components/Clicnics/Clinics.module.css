@@ -1,13 +1,21 @@
 .wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
   margin-top: 6rem;
   gap: 3.2rem;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
 }
 
 .titleClinic {
   color: var(--clr-saphire);
   border-bottom: 1px solid var(--clr-grey);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+    width: 100%;
+  }
 }

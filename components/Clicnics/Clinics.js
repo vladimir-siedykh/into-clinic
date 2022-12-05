@@ -10,9 +10,9 @@ const Clinics = () => {
           Clinically at{' '}
           <span className={styles.titleClinic}>San Diego, US</span>
         </h2>
-        <div className={styles.wrapper}>
-          {clinics.map((card) => (
-            <ClinicCard key={card.id} card={card} />
+        <div className={styles.wrapper} id='clinic'>
+          {clinics.map((clinic) => (
+            <ClinicCard key={clinic.id} clinic={clinic} />
           ))}
         </div>
       </div>

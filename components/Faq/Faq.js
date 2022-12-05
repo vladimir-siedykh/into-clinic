@@ -4,7 +4,7 @@ import styles from './Faq.module.css';
 const Faq = () => {
   return (
     <section className='section bg'>
-      <div className='container center'>
+      <div className={`container center ${styles.pattern}`}>
         <h2 className='heading-2 text-center'>How to make an appointment?</h2>
         <div className={styles.wrapper}>
           <div className={styles.card}>

@@ -18,7 +18,6 @@ const HomePage = () => {
       <Clinics />
       <Features />
       <Testimonials />
-      <Cta />
     </>
   )
 }

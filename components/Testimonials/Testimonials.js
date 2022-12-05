@@ -4,7 +4,7 @@ import userImage from '../../public/images/testimonial.png';
 
 const Testimonials = () => {
   return (
-    <section className='section'>
+    <section className={`section ${styles.section}`}>
       <div className='container center'>
         <h2 className='heading-2'>
           96% our patients satisfied with our services

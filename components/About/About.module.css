@@ -1,3 +1,21 @@
+.pattern {
+  position: relative;
+}
+
+.pattern::before {
+  content: url('/images/pattern-1.png');
+  position: absolute;
+  left: -10rem;
+  bottom: 0;
+}
+
+.pattern::after {
+  content: url('/images/pattern-2.png');
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -5,4 +23,24 @@
   gap: 2.4rem;
   max-width: 62rem;
   margin-inline: auto;
+}
+
+@media (max-width: 1200px) {
+  .pattern::before {
+    left: -5rem;
+  }
+
+  .pattern::after {
+    right: -5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .pattern::before {
+    content: none;
+  }
+
+  .pattern::after {
+    content: none;
+  }
 }

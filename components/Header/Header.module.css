@@ -3,6 +3,8 @@
   padding-inline: 10rem;
   padding-top: 2.1rem;
   padding-bottom: 2.1rem;
+  font-size: 2rem;
+  color: var(--clr-marine);
 }
 
 .bg {
@@ -55,7 +57,7 @@
 
 @media(max-width: 1200px) {
   .header {
-    padding-inline: 6rem;
+    padding-inline: 5rem;
   }
 }
 

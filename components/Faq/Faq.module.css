@@ -1,3 +1,14 @@
+.pattern {
+  position: relative;
+}
+
+.pattern::before {
+  content: url('/images/pattern-4.png');
+  position: absolute;
+  left: -10rem;
+  top: -10rem;
+}
+
 .wrapper {
   margin-top: 6rem;
   display: grid;
@@ -11,10 +22,11 @@
   padding: 4.8rem;
   width: 100%;
   background-color: var(--clr-white);
-  border-radius: 0.4rem;
+  border-radius: 1.2rem;
   max-width: 37.6rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card::after {
@@ -61,5 +73,18 @@
 
   .card {
     max-width: 60rem;
+  }
+}
+
+@media(max-width: 1200px) {
+  .pattern::before {
+    top: -5rem;
+    left: -5rem;
+  }
+}
+
+@media(max-width: 950px) {
+  .pattern::before {
+    content: none;
   }
 }

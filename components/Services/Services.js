@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
   return (
     <section className='section'>
-      <div className='container center'>
+      <div className={`container center ${styles.pattern}`}>
         <div className={styles.wrapper}>
           <div className={styles.intro}>
             <h2 className='heading-2 text-center'>We provide a modern service care</h2>
