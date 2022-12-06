@@ -10,6 +10,7 @@ const NewsLast = (card) => {
         src={card.imgMain}
         alt={card.title}
         style={{ width: '100%', height: 'auto' }}
+        priority={true}
       />
       <div className={styles.content}>
         <h2
