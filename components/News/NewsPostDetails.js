@@ -4,7 +4,6 @@ import subscrImg from '../../public/images/subscr.svg';
 import Link from 'next/link';
 
 const NewsPostDetails = ({ post }) => {
-  console.log(post);
   return (
     <section className='section'>
       <div className='container center'>
