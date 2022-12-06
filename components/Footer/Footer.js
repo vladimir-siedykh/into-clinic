@@ -46,10 +46,10 @@ const Footer = () => {
               <h4 className={styles.listTitle}>Resources</h4>
 
               <li>
-                <Link href='/policy'>Privacy Policy</Link>
+                <Link href='/'>Privacy Policy</Link>
               </li>
               <li>
-                <Link href='/terms'>Term of Using</Link>
+                <Link href='/'>Term of Using</Link>
               </li>
             </ul>
 
