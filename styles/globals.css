@@ -140,7 +140,7 @@ meter {
 
 .btn-transparent {
   display: block;
-  padding: 1.6rem 3.2rem;
+  padding: 1.4rem 3.2rem;
   border: 2px solid var(--clr-saphire);
   color: var(--clr-saphire);
   font-size: 1.6rem;
@@ -156,7 +156,7 @@ meter {
 
 .btn-blue {
   display: block;
-  padding: 1.6rem 3.2rem;
+  padding: 1.4rem 3.2rem;
   font-size: 1.6rem;
   background-color: var(--clr-saphire);
   color: var(--clr-white);
