@@ -38,15 +38,13 @@ const Footer = () => {
                 <Link href='/location'>Location</Link>
               </li>
               <li>
-                <Link href='/careers'>Careers</Link>
+                <Link href='/news'>News</Link>
               </li>
             </ul>
 
             <ul className={styles.list}>
               <h4 className={styles.listTitle}>Resources</h4>
-              <li>
-                <Link href='/news'>News</Link>
-              </li>
+
               <li>
                 <Link href='/policy'>Privacy Policy</Link>
               </li>

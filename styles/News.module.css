@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.postDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.author div:first-child {
+  color: var(--clr-marine);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.date div:first-child {
+  color: var(--clr-marine);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+@media(max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+}

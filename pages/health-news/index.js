@@ -1,11 +1,17 @@
-import React from 'react'
+import NewsAll from '../../components/News/NewsAll';
 
 const HealthNewsPage = () => {
   return (
-    <section className='section' style={{marginBottom: '20rem'}}>
-      <div className='container center'>HealthNewsPage</div>
-    </section>
+    <div style={{ marginBottom: '20rem' }}>
+      <section className='section bg'>
+        <div className='container center'>
+          <h1 className='heading-2'>Clinically Health News</h1>
+          <p style={{ marginTop: '0.8rem' }}>Our last updates</p>
+        </div>
+      </section>
+      <NewsAll />
+    </div>
   );
-}
+};
 
-export default HealthNewsPage
+export default HealthNewsPage;

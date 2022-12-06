@@ -36,7 +36,7 @@ body {
   font-family: var(--montserrat-font);
   font-size: 1.6rem;
   line-height: 160%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: var(--clr-dusky-blue);
 }
 
@@ -118,6 +118,14 @@ meter {
   font-weight: 500;
 }
 
+.heading-4 {
+  font-family: var(--montserrat-font);
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: var(--clr-marine);
+  font-weight: 500;
+}
+
 .container {
   max-width: 120rem;
 }
@@ -178,6 +186,10 @@ meter {
 @media(max-width: 768px) {
   .section {
     padding-inline: 2.4rem;
+  }
+
+  .heading-2 {
+    font-size: 3.2rem;
   }
 }
 

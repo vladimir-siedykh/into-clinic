@@ -70,11 +70,6 @@ const NavMobile = ({ setOpen }) => {
             Health News
           </Link>
         </motion.li>
-        <motion.li variants={item}>
-          <Link href='/careers' onClick={() => handle()}>
-            Careers
-          </Link>
-        </motion.li>
       </motion.ul>
     </motion.nav>
   );
