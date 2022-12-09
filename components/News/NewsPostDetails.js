@@ -4,6 +4,7 @@ import subscrImg from '../../public/images/subscr.svg';
 import Link from 'next/link';
 
 const NewsPostDetails = ({ post }) => {
+
   return (
     <section className='section'>
       <div className='container center'>
@@ -16,8 +17,11 @@ const NewsPostDetails = ({ post }) => {
               alt='post title'
               style={{ width: '100%', height: 'auto', borderRadius: '1.2rem' }}
             />
-            <p className={styles.text}>{post.article1}</p>
-            <p className={styles.text}>{post.article2}</p>
+            <div>
+              {post.article.split('\n').map((i, key) => {
+                return <p style={{marginTop: '1.6rem'}} key={key}>{i}</p>;
+              })}
+            </div>
           </article>
           <div className={styles.subscrFrom}>
             <Image src={subscrImg} alt='' />
@@ -42,7 +46,17 @@ const NewsPostDetails = ({ post }) => {
               </Link>
               .
             </div>
-            <button style={{width: '100%', textAlign: 'center', paddingBlock: '1.2rem', marginTop: '1.6rem'}} className='btn-blue'>Subscribe</button>
+            <button
+              style={{
+                width: '100%',
+                textAlign: 'center',
+                paddingBlock: '1.2rem',
+                marginTop: '1.6rem',
+              }}
+              className='btn-blue'
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

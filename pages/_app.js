@@ -1,10 +1,11 @@
 import Layout from '../components/Layout/Layout'
 import '../styles/globals.css'
-import { Montserrat } from '@next/font/google'
+// import { Montserrat } from '@next/font/google'
 
-const montserrat = Montserrat({
-  weights: [400, 500, 600, 700],
-})
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   weights: [400, 500, 600, 700],
+// })
 
 // const poppins = Poppins({
 //   subsets: ['latin'],
@@ -19,14 +20,14 @@ const montserrat = Montserrat({
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <style jsx global>{`
+      {/* <style jsx global>{`
         :root {
           --montserrat-font: ${montserrat.style.fontFamily};
         }
-        /* body {
+        body {
           font-family: var(--montserrat-font);
-        } */
-      `}</style>
+        }
+      `}</style> */}
       <Layout>
         <Component {...pageProps} />
       </Layout>

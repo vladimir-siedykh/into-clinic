@@ -1,0 +1,24 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs .tabsHeader {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs .tab {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs .tab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+.tabs .tabsContent {
+  padding: 20px;
+}

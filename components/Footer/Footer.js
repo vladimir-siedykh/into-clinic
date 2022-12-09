@@ -20,7 +20,7 @@ const Footer = () => {
                   priority={true}
                 />
               </Link>
-              <span>Family Health</span>
+              <span>Harmony Health Clinic</span>
             </div>
             <div className={styles.blockContacts}>
               <a href='tel:+19009009090'>+19009009090</a>
@@ -30,7 +30,7 @@ const Footer = () => {
 
           <nav className={styles.nav}>
             <ul className={styles.list}>
-              <h4 className={styles.listTitle}>Family Health</h4>
+              <h4 className={styles.listTitle}>Menu</h4>
               <li>
                 <Link href='/about'>About Us</Link>
               </li>
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Link href='/location'>Location</Link>
               </li>
               <li>
-                <Link href='/news'>News</Link>
+                <Link href='/'>News</Link>
               </li>
             </ul>
 
@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className={styles.copyright}>© 2022 Family Health</div>
+        <div className={styles.copyright}>© 2022 Harmony Health Clinic</div>
       </div>
     </section>
   );

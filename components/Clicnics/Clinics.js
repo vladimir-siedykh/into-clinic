@@ -19,7 +19,7 @@ const Clinics = () => {
     <section className='section'>
       <div className='container center'>
         <h2 className='heading-2'>
-          Clinically at{' '}
+          Harmony Health Clinic{' '}
           <span className={styles.titleClinic}>San Diego, US</span>
         </h2>
         <>
@@ -41,7 +41,11 @@ const Clinics = () => {
               },
             }}
             modules={[FreeMode, Pagination]}
-            style={{paddingBottom: '5rem', paddingInline: '0.3rem', marginTop: '5rem', }}
+            style={{
+              paddingBottom: '5rem',
+              paddingInline: '0.3rem',
+              marginTop: '5rem',
+            }}
           >
             {clinics.map((clinic) => (
               <SwiperSlide key={clinic.id}>

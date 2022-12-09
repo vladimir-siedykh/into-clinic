@@ -11,7 +11,7 @@ const Hero = () => {
           <div className={styles.content}>
             <h1 className={`heading-1 ${styles.title}`}>The Next Generation</h1>
             <h2 className={`heading-2 ${styles.subtitle}`}>
-              Of Clinic & Family Care
+              Of Clinic & Family
             </h2>
             <p className={styles.text}>
               Our clinic lets you visit exceptional medical providers, get
