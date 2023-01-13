@@ -67,7 +67,9 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className={styles.copyright}>© 2022 Harmony Health Clinic</div>
+        <div className={styles.copyright}>
+          © {new Date().getFullYear()} Harmony Health Clinic
+        </div>
       </div>
     </section>
   );
