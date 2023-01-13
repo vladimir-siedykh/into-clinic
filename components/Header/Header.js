@@ -20,22 +20,19 @@ const Header = () => {
   }
 
   return (
-    <header
-      className={`${styles.header} ${styles.bg}`}
-    >
+    <header className={`${styles.header} ${styles.bg}`}>
       <div className='container center'>
         <div className={styles.wrapper}>
-          <div className={styles.logo}>
-            <Link href='/'>
-              <Image
-                src='/images/logo.svg'
-                alt='logo'
-                width={46}
-                height={46}
-                priority={true}
-              />
-            </Link>
-          </div>
+          <Link href='/' className={styles.logo}>
+            <Image
+              src='/images/logo.svg'
+              alt='logo'
+              width={46}
+              height={46}
+              priority={true}
+            />
+            <span>Harmony Clinic</span>
+          </Link>
           {!isMobile && <NavDesktop />}
           {isMobile && <NavigationMobile />}
         </div>

@@ -18,11 +18,13 @@
 }
 
 .logo {
-  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo span {
-  color: var(--clr-yellow);
+  color: var(--clr-marine);
 }
 
 .nav {

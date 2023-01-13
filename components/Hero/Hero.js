@@ -95,18 +95,7 @@ const Hero = () => {
             alt='hero'
             width={596}
             height={697}
-            priority={true}
-            layout='responsive'
           />
-          {/* <div className={styles.imgContainer}>
-            <Image
-              className={styles.img}
-              src={mainImage}
-              alt='main image'
-              fill={true}
-              priority={true}
-            />
-          </div> */}
         </div>
       </div>
     </section>
