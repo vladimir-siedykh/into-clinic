@@ -56,19 +56,43 @@ const Footer = () => {
             <ul className={styles.list}>
               <h4 className={styles.listTitle}>Follow Us</h4>
               <li>
-                <a href='http://facebook.com'>Facebook</a>
+                <Link
+                  href='http://facebook.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Facebook
+                </Link>
               </li>
               <li>
-                <a href='http://instagram.com'>Instagram</a>
+                <Link
+                  href='http://instagram.com'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Instagram
+                </Link>
               </li>
               <li>
-                <Link href='/linkedin.com'>LinkedIn</Link>
+                <Link href='/linkedin.com' target='_blank' rel='noreferrer'>
+                  LinkedIn
+                </Link>
               </li>
             </ul>
           </nav>
         </div>
         <div className={styles.copyright}>
-          © {new Date().getFullYear()} Harmony Health Clinic
+          <div>Restofood. {new Date().getFullYear()} All Right Reserved</div>
+          <div>
+            Developed by{' '}
+            <Link
+              className={styles.link}
+              href='https://siedykh.com'
+              target='_blank'
+            >
+              VSD&D
+            </Link>
+          </div>
         </div>
       </div>
     </section>
