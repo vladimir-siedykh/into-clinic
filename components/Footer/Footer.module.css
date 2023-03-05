@@ -56,6 +56,10 @@
   text-decoration: underline;
 }
 
+.developer {
+  visibility: hidden;
+}
+
 @media(max-width: 990px) {
   .wrapper {
     flex-direction: column;

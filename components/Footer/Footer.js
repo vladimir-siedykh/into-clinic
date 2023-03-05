@@ -82,8 +82,10 @@ const Footer = () => {
           </nav>
         </div>
         <div className={styles.copyright}>
-          <div>Restofood. {new Date().getFullYear()} All Right Reserved</div>
           <div>
+            Harmony Clinic. {new Date().getFullYear()} All Right Reserved
+          </div>
+          <div className={styles.developer}>
             Developed by{' '}
             <Link
               className={styles.link}
