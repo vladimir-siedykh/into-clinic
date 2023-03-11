@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.harmony-clinic.com',
+  siteUrl: 'https://www.harmonyclinic.online',
   generateRobotsTxt: true, // (optional)
   // ...other options
 };
