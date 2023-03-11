@@ -92,7 +92,7 @@ const Footer = () => {
               href='https://www.siedykh.com'
               target='_blank'
             >
-              VSD&D
+              Volodymyr Siedykh
             </Link>
           </div>
         </div>
