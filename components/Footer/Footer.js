@@ -85,7 +85,7 @@ const Footer = () => {
           <div>
             Harmony Clinic. {new Date().getFullYear()} All Right Reserved
           </div>
-          <div className={styles.developer}>
+          {/* <div className={styles.developer}>
             Developed by{' '}
             <Link
               className={styles.link}
@@ -94,7 +94,7 @@ const Footer = () => {
             >
               Volodymyr Siedykh
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
